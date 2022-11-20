@@ -6,16 +6,16 @@ resultado = "2" + 10
 
 from ast import main 
 
-def error_suma_string(*args):
+def error_suma_string(*args): #Creo una función para la resolución del ejercicio
     suma = 0
     for args in args:
-        try:
+        try: #Pruebo a ver si funciona
             suma += args 
         except TypeError:
             print ("No se puede sumar un string a un int/float")     
     return 
 
-error_suma_string("2", 10)
+error_suma_string("2", 10)#Ejecuto la función
 
 if __name__ == "__main__":
     main()
