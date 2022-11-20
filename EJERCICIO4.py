@@ -15,7 +15,7 @@ def error_suma_string(*args): #Creo una función para la resolución del ejercic
             print ("No se puede sumar un string a un int.")     
     return 
 
-error_suma_string("2", 10)#Ejecuto la función
+error_suma_string("2", 10) #Ejecuto la función
 
 if __name__ == "__main__":
     main()
