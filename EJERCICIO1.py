@@ -12,7 +12,7 @@ def error_division_0(numerador,denominador): #Creo una función para la resoluci
     except ZeroDivisionError: #Como divido por zero me da error 
         print("No se puede dividir por 0")
 
-error_division_0(7,0)
+error_division_0(7,0)#Ejecuto la función
 
 if __name__ == "__main__":
     main()
