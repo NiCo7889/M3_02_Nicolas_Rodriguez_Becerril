@@ -5,16 +5,16 @@ paises["alemania"]
 """
 
 from ast import main 
-paises = { "españa":"español", "eeuu":"inglés", "italia":"italiano" } #Creamos un diccionario
 
-def non_dict_key():     #Creamos una función para coger el error
+def error_elemento_fuera_lista(lista, elemento_lista):
     try:
-        paises["alemania"]  #Buscamos la clave alemania en el diccionario
-    except KeyError:    #Si la excepción es del tipo KeyError
-        return "La clave buscada no existe"     #Decimos que la clave no existe en caso de que salte el error
+        elemento = lista[elemento_lista]
+        return elemento 
+    except IndexError:
+        print ("El elemento {} no se encuentra en la lista, ya que la lista solo contiene {} elementos".format(elemento_lista, len(lista)))     
+    return 
 
-def main():     #Creamos la función main
-    print(non_dict_key())
+error_elemento_fuera_lista([4, 7, 30, 23, 5], 10)
 
-if __name__ == "__main__":  #Ejecutamos el código
+if __name__ == "__main__":
     main()
