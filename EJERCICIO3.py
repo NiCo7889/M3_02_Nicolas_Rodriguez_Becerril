@@ -16,6 +16,5 @@ def error_clave_fuera_diccionario(diccionario, clave):#Creo una función para la
 
 error_clave_fuera_diccionario({ "españa":"español", "eeuu":"inglés", "italia":"italiano" } , "alemania")#Ejecuto la función
 
-
 if __name__ == "__main__":
     main()
