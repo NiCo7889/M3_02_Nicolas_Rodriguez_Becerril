@@ -11,8 +11,8 @@ def error_suma_string(*args): #Creo una función para la resolución del ejercic
     for args in args:
         try: #Pruebo a ver si funciona
             suma += args 
-        except TypeError:
-            print ("No se puede sumar un string a un int/float")     
+        except TypeError: #Capturo el error
+            print ("No se puede sumar un string a un int.")     
     return 
 
 error_suma_string("2", 10)#Ejecuto la función

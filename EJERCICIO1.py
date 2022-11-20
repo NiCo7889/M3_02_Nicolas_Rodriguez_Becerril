@@ -9,8 +9,8 @@ def error_division_0(numerador,denominador): #Creo una función para la resoluci
     try: #Pruebo a ver si funciona
         numero = numerador/denominador
         return numero 
-    except ZeroDivisionError: #Como divido por zero me da error 
-        print("No se puede dividir por 0")
+    except ZeroDivisionError: #Capturo el error
+        print("No se puede dividir por 0.")#Como divido por zero me da error
 
 error_division_0(7,0)#Ejecuto la función
 
