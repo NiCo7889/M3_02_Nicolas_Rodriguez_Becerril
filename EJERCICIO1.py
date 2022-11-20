@@ -11,7 +11,6 @@ def error_division_0(numerador,denominador): #Creo una función para la resoluci
         return numero 
     except ZeroDivisionError: #Como divido por zero me da error 
         print("No se puede dividir por 0")
-    return 
 
 error_division_0(7,0)
 
